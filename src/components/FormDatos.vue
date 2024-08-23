@@ -45,7 +45,10 @@ export default {
 
       <div>
         <label for="tipoTarjeta">Tipo de tarjeta SRC: </label>
-        <input id="tipoTarjeta" type="text" v-model="tarjeta.tipoTarjeta" />
+        <select v-model="tarjeta.tipoTarjeta">
+          <option value="./img/visa.png">VISA</option>
+          <option value="./img/mastercard.png">Mastercard</option>
+        </select>
       </div>
     </form>
 
